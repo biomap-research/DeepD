@@ -1,0 +1,17 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+jupyter>=1.0
+jupyterlab>=4.0
+ipykernel>=6.25
+nbformat>=5.8
+nbconvert>=7.6
+torch>=2.0.0
+pyyaml>=6.0
+tensorboard>=2.14.0
+tqdm>=4.65.0
+scikit-learn>=1.0.0
+huggingface_hub>=0.25,<2
+IPython>=8.0
+xgboost>=2.0

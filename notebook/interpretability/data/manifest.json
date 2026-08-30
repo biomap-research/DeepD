@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-08-22T00:00:00Z",
+  "species": "human",
+  "region": {
+    "name": "HBB",
+    "chrom": "chr11",
+    "start_0based": 5220000,
+    "end_0based_exclusive": 5240000
+  },
+  "rows": 20000,
+  "feature_width": 576,
+  "feature_files": 8,
+  "models": {
+    "count": 12,
+    "format": "XGBoost JSON, losslessly exported from the trusted model_raw.pkl Booster state",
+    "xgboost_version": [
+      "3.2.0"
+    ]
+  },
+  "plotting": {
+    "implementation": "plot_ovr_full_prediction_tracks_stable_pdf.py",
+    "matplotlib_version": "3.10.8",
+    "model_panels": ["8kb_model", "1m_model"],
+    "labels": ["CDS", "repeat_DNA_transposon", "repeat_LTR", "repeat_LINE", "repeat_SINE"],
+    "truth_mode": "priority",
+    "prediction_color": "#d2b3d5",
+    "truth_color": "#82b2d4",
+    "dpi": 600
+  },
+  "selection": "Exact interval used by the original HBB full-prediction figure; no random sampling"
+}

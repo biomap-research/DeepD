@@ -1,0 +1,5 @@
+##gff-version 3
+# Source: NCBI RefSeq GCF_000146045.2_R64; structural markers only.
+NC_001135.5	RefSeq	telomere	1	1098	.	-	.	ID=TEL03L;Name=TEL03L;Note=Chromosome III left telomere
+NC_001135.5	RefSeq	centromere	114385	114501	.	+	.	ID=CEN3;Name=CEN3;Note=Chromosome III centromere
+NC_001135.5	RefSeq	telomere	315783	316620	.	+	.	ID=TEL03R;Name=TEL03R;Note=Chromosome III right telomere

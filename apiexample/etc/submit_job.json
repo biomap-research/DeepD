@@ -1,0 +1,9 @@
+{
+  "modelname": "xtrimodnagpt",
+  "namespace": "deepd",
+  "parameters": {
+    "prompt": "AT",
+    "task_type": "embedding"
+  },
+  "version": "1"
+}

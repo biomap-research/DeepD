@@ -1,0 +1,11 @@
+model_tag,model_label,label,layer,layer_num,metric,best_metric_value,region_points_plotted,truth_blocks,truth_ymin,truth_height
+8kb_model,8 kb,CDS,layer_024,24,test_auprc,0.9614342796061938,20000,7,-0.21,0.16
+8kb_model,8 kb,repeat_DNA_transposon,layer_017,17,test_auprc,0.880728951459656,20000,0,-0.21,0.16
+8kb_model,8 kb,repeat_LTR,layer_017,17,test_auprc,0.9223261079375116,20000,1,-0.21,0.16
+8kb_model,8 kb,repeat_LINE,layer_016,16,test_auprc,0.8983996423273394,20000,12,-0.21,0.16
+8kb_model,8 kb,repeat_SINE,layer_021,21,test_auprc,0.957019655945726,20000,5,-0.21,0.16
+1m_model,1M,CDS,layer_024,24,test_auprc,0.958248197210942,20000,7,-0.21,0.16
+1m_model,1M,repeat_DNA_transposon,layer_017,17,test_auprc,0.8830832605291852,20000,0,-0.21,0.16
+1m_model,1M,repeat_LTR,layer_017,17,test_auprc,0.9271064838910044,20000,1,-0.21,0.16
+1m_model,1M,repeat_LINE,layer_016,16,test_auprc,0.90388085081918,20000,12,-0.21,0.16
+1m_model,1M,repeat_SINE,layer_017,17,test_auprc,0.9602982293100368,20000,5,-0.21,0.16

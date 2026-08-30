@@ -1,0 +1,16 @@
+{
+  "blastp": "blastp",
+  "dag_a": 5,
+  "dag_d": 1000000,
+  "dag_g": 40000,
+  "dagchainer": "run_DAG_chainer.pl",
+  "evalue": 1e-10,
+  "force": false,
+  "makeblastdb": "makeblastdb",
+  "manifest": "data/resolved_manifest.tsv",
+  "max_target_seqs": 50,
+  "outdir": "data/60_protein_synteny_work",
+  "perl": "perl",
+  "tandem_nmax": 10,
+  "threads": 32
+}

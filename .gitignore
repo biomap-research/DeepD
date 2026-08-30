@@ -1,0 +1,50 @@
+# --- API credentials (never commit these) ---
+API-Key.txt
+API-Key.txt.bak
+API-Key.txt.tmp
+
+# --- Notebook run artifacts / outputs (safe to keep locally, not in git) ---
+**/results/
+**/.ipynb_checkpoints/
+*_executed.ipynb
+
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# --- Repo-root scratch / diagnostic files ---
+/_*.py
+/_*.txt
+/_*.ipynb
+/_*.json
+
+# --- notebook/interpretability: source code only; large runtime assets stay local ---
+notebook/interpretability/**/generated/
+notebook/interpretability/**/.ipynb_checkpoints/
+notebook/interpretability/**/*_executed.ipynb
+# Small input CSVs under data/ are committed to git; only the large *.npy feature arrays stay local.
+# ~352 MB: data/human/features/*.npy, re-downloaded by hbb_ovr_demo.py from the HF demo repo
+# ~64 MB: model binaries and per-repeat JSONs, re-downloaded by hbb_ovr_demo.py
+notebook/interpretability/models/human/
+notebook/interpretability/**/*.npy
+notebook/interpretability/**/*.npz
+notebook/interpretability/**/*.pt
+notebook/interpretability/**/*.pth
+notebook/interpretability/**/*.ckpt
+notebook/interpretability/**/*.bin
+notebook/interpretability/**/*.safetensors
+notebook/interpretability/**/*.h5
+notebook/interpretability/**/*.hdf5
+notebook/interpretability/**/*.parquet
+notebook/interpretability/**/*.png
+notebook/interpretability/**/*.pdf
+
+notebook/fine_tune/H3/
+notebook/fine_tune/data/
+notebook/zero_shot/api_scores/
+# --- Editor / OS junk ---
+**/.DS_Store
+**/.Rhistory
+temp/

@@ -1,0 +1,56 @@
+paths:
+  train_csv: data/H3/H3_train.csv
+  val_csv: data/H3/H3_valid.csv
+  test_csv: data/H3/H3_test.csv
+  train_embedding_dir: data/H3/H3_train_embeddings
+  val_embedding_dir: data/H3/H3_valid_embeddings
+  test_embedding_dir: data/H3/H3_test_embeddings
+  checkpoint_dir: outputs/H3/checkpoints
+  output_dir: outputs/H3
+
+data:
+  label_source: csv
+  id_column: unique_id
+  embedding_key: layernorm_embedding
+  embedding_filename_fmt: "embedding_{unique_id}.pt"
+  skip_prefix_tokens: 2
+  skip_suffix_tokens: 0
+  strict: true
+
+task:
+  type: classification
+  mode: single_label
+  num_classes: 2
+  threshold: 0.5
+
+model:
+  type: mlp
+  hidden_dims: [512, 128]
+  dropout: 0.0
+  output_mode: sequence
+  input_dim: 2048
+
+metrics:
+  names: [mcc, accuracy]
+
+loss:
+  name: cross_entropy
+
+train:
+  batch_size: 512
+  eval_every_steps: 20
+  early_stopping_patience: 10
+  early_stopping_metric: mcc
+  max_steps: 10000
+  lr: 1.0e-3
+  optimizer: adam
+  seed: 42
+  num_workers: 0
+  device: cuda
+  save_test_predictions: true
+  test_output_csv: outputs/H3/test_predictions.csv
+  merge_test_predictions: true
+
+tensorboard:
+  log_dir: outputs/H3/tensorboard
+  task_name: H3

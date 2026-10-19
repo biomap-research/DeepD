@@ -1,5 +1,7 @@
 # DeepD: Phylogeny-Informed Genome Foundation Model and Controllable Long-Context Sequence Design
 
+**[Project Website](https://biomap-research.github.io/DeepD-website/) · [Preprint (bioRxiv)](https://doi.org/10.64898/2026.10.13.758170)**
+
 ![DeepD](figure/deepd.png)
 
 ## Overview
@@ -31,6 +33,8 @@ git clone https://github.com/biomap-research/DeepD.git
 cd deepd
 pip install -r requirements.txt
 ```
+
+Request a free academic API token on the [DeepD website](https://biomap-research.github.io/DeepD-website/#api).
 
 Set an API token before calling the gateway:
 
@@ -74,3 +78,23 @@ The [API usage guide](apiexample/README.md) covers configuration, worked example
 
 
 Several notebooks download large runtime assets on first run. Use the README in each notebook directory for setup.
+
+## Citation
+
+If you use DeepD in your research, please cite:
+
+```bibtex
+@article{xin2026deepd,
+  title   = {DeepD enables efficient genome modeling and controllable
+             long-context sequence generation across domains of life},
+  author  = {Xin, Beibei and Wang, Zijian and Yu, An and Chen, Ziyang and
+             Guo, Yucheng and Zhang, Mingpei and Hu, Bozhen and Ye, Chonghang and
+             Chen, Jian and Liu, Qiujie and Zhao, Haiming and Song, Weibin and
+             Dong, Nanqing and Yang, Fan and Yang, Qirong and Zhao, Hainan and
+             Lai, Jinsheng},
+  journal = {bioRxiv},
+  year    = {2026},
+  doi     = {10.64898/2026.10.13.758170},
+  url     = {https://doi.org/10.64898/2026.10.13.758170}
+}
+```

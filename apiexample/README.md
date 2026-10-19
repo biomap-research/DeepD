@@ -14,6 +14,8 @@ apiexample/
 
 ## Configuration
 
+Request a free academic API key at <https://biomap-research.github.io/DeepD-website/#api>.
+
 Configure your API key with the `INFERENCE_API_TOKEN` environment variable, or
 place it in the git-ignored `API-Key.txt` at the repository root. You may also
 pass the token directly with `--token`.
